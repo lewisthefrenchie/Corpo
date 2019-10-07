@@ -1,0 +1,35 @@
+/* CSS de index.html */
+
+html {
+	font-family: "Open Sans";
+}	
+
+#fixedIndexBg {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/indexBg.jpg");
+	background-size: cover;
+	z-index: 0;
+}
+
+#container {
+	text-align: center;
+	padding-top: 150px;
+	background: transparent;
+	box-shadow: none;
+}
+
+#title {
+	display: inline-block;
+	font-weight: 300;
+	font-size: 50px;
+	text-align: left;
+	vertical-align: middle;
+}
+.titleUpper { color: #fa5454; }
+
+#foot {
+	position: absolute;
+	bottom: 0
+}

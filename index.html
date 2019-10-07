@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>ACEMR - Corpo Médecine Rouen</title>
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="fixedIndexBg"></div>
+	<div id="header" class="">
+		<div id="headerLogoContainer">
+			<a href="index.html"><div id="headerLogo"></div></a>
+		</div>
+		<div id="headerButtons">
+			<div class="headerButton"><a href="presentation.html">La Corpo</a></div>
+			<div class="headerButton"><a href="WIP.html">Actus</a></div>
+			<div class="headerButton"><a href="paces.html">PACES</a></div>
+			<div class="headerButton"><a href="WIP.html">Tutorat</a></div>
+			<div class="headerButton"><a href="WIP.html">DFGSM2/3</a></div>
+			<div class="headerButton"><a href="WIP.html">DFASM1/2/3</a></div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="title">
+			<span class="titleUpper">A</span>ssociation<br>
+			<span class="titleUpper">C</span>orporative des<br>
+			<span class="titleUpper">E</span>tudiants en<br>
+			<span class="titleUpper">M</span>édecine de<br>
+			<span class="titleUpper">R</span>ouen<br>
+		</div>
+		<div id="foot">
+			<div id="footContent">
+				© 2019 ACEMR. <a href="legal.html">Mention légales</a>
+			</div>
+		</div>
+	</div>
+	
+<script>
+$(document).ready(function(){
+	let orderToLoad = ["headerScroll", "containerRework"]
+	for(let i of orderToLoad) {
+		let s = document.createElement("script");
+		s.src = "scripts/"+i+".js";
+		document.head.appendChild(s)
+	}
+});
+</script>
+	
+</body>
+</html>

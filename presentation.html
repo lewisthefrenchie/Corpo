@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>ACEMR - Corpo Médecine Rouen</title>
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/presentation.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+	<input type="hidden" id="headerScrollCustom" value="30"/>
+	<div id="headerBg">
+		<div id="headerBgShadow"></div>
+		<div id="headerBgImg"></div>
+	</div>
+	<div id="header" class="">
+		<div id="headerLogoContainer">
+			<a href="index.html"><div id="headerLogo"></div></a>
+		</div>
+		<div id="headerButtons">
+			<div class="headerButton"><a href="presentation.html">La Corpo</a></div>
+			<div class="headerButton"><a href="news.html">Actus</a></div>
+			<div class="headerButton"><a href="paces.html">PACES</a></div>
+			<div class="headerButton"><a href="WIP.html">Tutorat</a></div>
+			<div class="headerButton"><a href="WIP.html">DFGSM2/3</a></div>
+			<div class="headerButton"><a href="WIP.html">DFASM1/2/3</a></div>
+		</div>
+	</div>
+	<div id="container">
+		
+		<div class="containerBloc">
+			<div class="containerBlocTitle"><span>Qui sommes nous ?<span></div>
+			Nous sommes une association qui réprésente les <span class="colored">étudiants en médecine de Rouen</span>
+			<br>Puis on fait d'autres trucs sympa
+			<br>Franchement c mortel
+			<br>P2 quel est votre métier ?
+		</div>
+		
+		<div class="containerBloc">
+			<div class="containerBlocTitle"><span>Notre équipe<span></div>
+			Plein de gens. Grosse équipe qui travaille pour vous et c'est ouf.
+			<br>Pour l'acemr hip hip hip ?
+		</div>
+		
+		<div class="containerBloc">
+			<div class="containerBlocTitle"><span>Un autre titre<span></div>
+			<span class="colored">Wow des couleurs</span>, et du <b>gras</b>
+			<br> et des <i>italiques</i>, et des <u>soulignés</u>
+			<br> c'est dingue
+		</div>
+		
+		<div id="foot">
+			<div id="footContent">
+				© 2019 ACEMR. <a href="legal.html">Mention légales</a>
+			</div>
+		</div>
+	</div>
+	
+<script>
+$(document).ready(function(){
+	let orderToLoad = ["headerScroll", "containerRework"]
+	for(let i of orderToLoad) {
+		let s = document.createElement("script");
+		s.src = "scripts/"+i+".js";
+		document.head.appendChild(s)
+	}
+});
+</script>
+	
+</body>
+</html>

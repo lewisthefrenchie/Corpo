@@ -1,0 +1,12 @@
+/* CSS de presentation.html */
+
+html {
+	font-family: "Open Sans";
+}	
+   
+#headerBg { height: 85%;}
+
+#headerBgImg {
+	background-image: url("../images/presBg.jpg"); 
+	background-position: 0 -150px;
+}
